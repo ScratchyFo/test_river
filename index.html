@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Test</title>
+</head>
+<body>
+<div class="container">
+
+	<div class="blockControl">
+
+		<div class="blockCategory">
+			<div class="addCategory">
+				<h2>Добавление категории</h2>
+				<form action="action.php" method="POST">
+					<input type="text" placeholder="Название категории" value="">
+					<button>Применить</button>
+				</form>
+			</div>
+			<div class="deleteCategory">
+			<h2>Удаление категории</h2>
+			<form action="action.php" method="POST">
+				<input type="text" placeholder="Название категории" value="">
+				<button>Применить</button>
+			</form>
+			</div>
+		</div>
+
+		<div class="blockProduct">
+			<div class="addProduct">
+				<h2>Добавление продукта</h2>
+				<form action="action.php" method="POST">
+				<input type="text" placeholder="Название продукта" value="">
+				<button>Применить</button>
+				</form>
+			</div>
+			<div class="deleteProduct">
+			<h2>Удаление продукта</h2>
+			<form action="action.php" method="GET">
+				<input type="text" placeholder="Удаление продукта" value="">
+				<button onclick="$_GET['value']">Применить</button>
+			</form>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>
